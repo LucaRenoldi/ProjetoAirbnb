@@ -69,15 +69,11 @@ export default function Carousel() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        borderColor: "red",
-        borderWidth: 5,
     },
     dotsContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
         marginTop: 10,
-        borderColor: "yellow",
-        borderWidth: 5,
     },
     dot: {
         height: 10,
