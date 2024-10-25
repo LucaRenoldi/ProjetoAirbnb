@@ -1,10 +1,8 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
-
+import { View, Image, StyleSheet, useWindowDimensions } from 'react-native';
+import {scale} from "../assets/Scale";
 
 export default function CarouselItem ({ item }) {
-   
-
     return (
         <View style={styles.container}>
             <Image 
@@ -22,11 +20,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         borderColor: "#000",
-        width:'!00%',
+        width: scale(380),
         borderWidth: 4,
         alignContent: "center",
         justifyContent: "center",
-        marginHorizontal: 20,
+        marginHorizontal: scale(6),
     },
     image: {
         height: '100%',
